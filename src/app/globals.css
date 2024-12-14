@@ -2,20 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  font-family: "IranSansX";
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.yekan-font {
+  font-family: "Yekan";
+}
+.kalame-font {
+  font-family: "Kalame";
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.red-text-linear {
+  background: linear-gradient(90deg, #E93F40 0%, #BC2727 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* ScrollBar */
+
+/* Styling the overall scrollbar */
+::-webkit-scrollbar {
+  width: 12px;  /* Width of the scrollbar */
+  height: 12px; /* Height of the scrollbar for horizontal scrolling */
+}
+
+/* Styling the track (background of scrollbar) */
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+/* Styling the scrollbar thumb (draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar */
+  border-radius: 10px;
+  border: 3px solid #f0f0f0; /* Space around the thumb */
+}
+
+/* Hover effect for the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+
+@font-face {
+  font-family: "IranSansX";
+  src: url("/fonts/woff/IRANSansXFaNum-Regular.woff") format("woff"),
+       url("/fonts/woff2/IRANSansXFaNum-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "IranSansX";
+  src: url("/fonts/woff/IRANSansXFaNum-Medium.woff") format("woff"),
+       url("/fonts/woff2/IRANSansXFaNum-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "IranSansX";
+  src: url("/fonts/woff/IRANSansXFaNum-DemiBold.woff") format("woff"),
+       url("/fonts/woff2/IRANSansXFaNum-DemiBold.woff2") format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "IranSansX";
+  src: url("/fonts/woff/IRANSansXFaNum-Bold.woff") format("woff"),
+       url("/fonts/woff2/IRANSansXFaNum-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Yekan";
+  src: url("/fonts/IRANYekanX-Bold.ttf");
+}
+@font-face {
+  font-family: "Kalame";
+  src: url("/fonts/Kalameh-Black.ttf");
 }
