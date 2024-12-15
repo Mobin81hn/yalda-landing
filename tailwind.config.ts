@@ -28,7 +28,8 @@ export default {
     },
     extend: {
       backgroundImage: {
-        "hero-pattern": "url('/images/banner.png')"
+        "hero-pattern": "url('/images/banner.png')",
+        "watermelon-pattern": "url('/images/watermelon-bg.png')"
       },
       colors: {
         "red-status": "#E93F40",

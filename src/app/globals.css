@@ -19,6 +19,14 @@
   -webkit-text-fill-color: transparent;
 }
 
+.sliderContainer {
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+}
+
+.footer-bg {
+  background: radial-gradient(137.7% 91.32% at 94.03% 100%, #2E364D 0%, #191D28 100%);
+}
 
 /* ScrollBar */
 
